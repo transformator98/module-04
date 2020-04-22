@@ -1,0 +1,284 @@
+:root {
+    --one-color-logo: #1abc9c;
+    --two-color-logo: #555252;
+    --color-title: #515151;
+    --color-menu: #0f0101;
+    --product-background: #e9f0fd;
+    --product-color: #ffffff;
+    --contein-color: #323232;
+    --primary-font-stack: "Roboto", sans-serif;
+    --font-menu: 'Open Sans', sans-serif;
+
+
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--primary-font-stack);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* START SITE LOGO */
+.main-nav {
+    padding-top: 36px;
+
+}
+
+.site-logo {
+    display: inline-block;
+    margin-bottom: 94px;
+}
+
+.logo::first-letter {
+    font-family: var(--primary-font-stack);
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 32px;
+    color: var(--one-color-logo);
+    text-transform: uppercase;
+}
+
+.logo {
+    color: var(--two-color-logo);
+    font-family: var(--primary-font-stack) font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    float: left;
+
+}
+
+
+/* END SITE LOGO */
+
+
+/* START SITE NAVIGATION*/
+
+.site-navigation {
+    width: 495px;
+    padding: 6px 0;
+    float: right;
+}
+
+
+.site-navigation li:not(:last-child) {
+    margin-right: 34px;
+}
+
+.item {
+    float: left;
+}
+
+
+.link {
+    font-family: var(--font-menu);
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: bold;
+    color: #0f0101;
+    text-transform: uppercase;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--one-color-logo);
+}
+
+/* END SITE NAVIGATION*/
+
+
+/* START FEATURED PRODUCTS */
+.product-section {
+    margin-bottom: 105px;
+}
+
+.title-product {
+    text-transform: uppercase;
+    font-family: var(--primary-font-stack);
+    font-weight: 900;
+    font-size: 48px;
+    line-hight: 32px;
+    color: var(--color-title);
+    text-align: center;
+
+}
+
+.title-product::after {
+    content: '';
+    display: block;
+    width: 164px;
+    height: 6px;
+    background-color: var(--one-color-logo);
+    margin: 32px auto 92px auto;
+}
+
+.product-item {
+    width: 255px;
+    float: left;
+
+}
+
+.product-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.product-item:not(:nth-last-child(-n+4)) {
+    margin-bottom: 30px;
+}
+
+.product-item:hover .name-contain {
+    background-color: var(--one-color-logo);
+}
+
+.product-foto {
+    background-color: var(--product-background);
+    width: 255px;
+    height: 284px;
+}
+
+.name-contain {
+    background-color: var(--contein-color);
+
+}
+
+
+.product-name,
+.price {
+    text-transform: uppercase;
+    color: var(--product-color);
+    font-family: var(--primary-font-stack);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.product-name {
+    float: left;
+    padding-left: 14px;
+}
+
+.price {
+    float: right;
+    padding: 0 12px;
+    background-color: rgba(255, 255, 255, 0.44);
+
+}
+
+
+
+/* END FEATURED PRODUCTS */
+
+/* START LATEST NEWS */
+.news-title {
+    text-transform: uppercase;
+    font-family: var(--primary-font-stack);
+    font-weight: 900;
+    font-size: 48px;
+    line-hight: 32px;
+    color: var(--two-color-logo);
+    text-align: center;
+}
+
+.news-title::after {
+    content: '';
+    display: block;
+    width: 164px;
+    height: 6px;
+    background-color: var(--one-color-logo);
+    margin: 32px auto 82px auto;
+}
+
+
+.news-section {
+    width: 350px;
+    float: left;
+}
+
+.news-section:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.news-foto {
+    width: 350px;
+    height: 262px;
+    margin-bottom: 10px;
+}
+
+.news-link {
+    font-family: var(--font-menu);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--two-color-logo);
+
+}
+
+.news-link::after {
+    content: '';
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: var(--one-color-logo);
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.news-text {
+    font-family: var(--font-menu);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--two-color-logo);
+    margin-bottom: 12px;
+}
+
+.button {
+
+    color: var(--product-color);
+    background-color: var(--one-color-logo);
+    font-family: var(--font-menu);
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 15px 44px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 80px;
+}
+
+
+/* END LATEST NEWS */
