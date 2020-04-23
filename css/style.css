@@ -73,7 +73,8 @@ a {
 
 .logo {
     color: var(--two-color-logo);
-    font-family: var(--primary-font-stack) font-weight: 300;
+    font-family: var(--primary-font-stack);
+    font-weight: 300;
     font-size: 30px;
     line-height: 32px;
     text-transform: uppercase;
@@ -130,7 +131,6 @@ a {
     font-family: var(--primary-font-stack);
     font-weight: 900;
     font-size: 48px;
-    line-hight: 32px;
     color: var(--color-title);
     text-align: center;
 
@@ -206,7 +206,6 @@ a {
     font-family: var(--primary-font-stack);
     font-weight: 900;
     font-size: 48px;
-    line-hight: 32px;
     color: var(--two-color-logo);
     text-align: center;
 }
