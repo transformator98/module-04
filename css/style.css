@@ -6,6 +6,7 @@
     --product-background: #e9f0fd;
     --product-color: #ffffff;
     --contein-color: #323232;
+    --price-color: rgba(255, 255, 255, 0.44);
     --primary-font-stack: "Roboto", sans-serif;
     --font-menu: 'Open Sans', sans-serif;
 
@@ -192,7 +193,7 @@ a {
 .price {
     float: right;
     padding: 0 12px;
-    background-color: rgba(255, 255, 255, 0.44);
+    background-color: var(--price-color);
 
 }
 
@@ -265,19 +266,17 @@ a {
 }
 
 .button {
-
     color: var(--product-color);
-    background-color: var(--one-color-logo);
     font-family: var(--font-menu);
     font-size: 16px;
     line-height: 26px;
-    text-transform: capitalize;
-    cursor: pointer;
-    padding: 15px 44px;
+    background-color: var(--one-color-logo);
     border: none;
     border-radius: 3px;
     margin-bottom: 80px;
+    padding: 15px 44px;
+    text-transform: capitalize;
+    cursor: pointer;
 }
-
 
 /* END LATEST NEWS */
